@@ -140,12 +140,12 @@ def main():
     root.iconbitmap('icon.ico')  # Replace with the path to your .ico file
 
     # Create a label to display the text
-    label = tk.Label(root, text="", font=("Helvetica", 28), wraplength=580, justify="center")
-    label.pack(pady=20)
+    label = tk.Label(root, text="", font=("Helvetica", 22), wraplength=580, justify="center")
+    label.pack(pady=28)
 
     # Create a frame to hold the buttons (start and stop)
     button_frame = tk.Frame(root)
-    button_frame.pack(pady=10)
+    button_frame.pack(pady=1)
 
     # Create a speed control slider
     speed_var = tk.DoubleVar(value=0.3)
@@ -168,18 +168,19 @@ def main():
         text="Start",
         command=lambda: start_reveal_process(label, speed_var, root, text_widget, speed_value_label)
     )
-    start_button.pack(side="left", padx=10, ipadx=10, ipady=5)
+    start_button.pack(side="left", padx=2, ipadx=2, ipady=2)
 
     stop_button = ttk.Button(
         button_frame,
         text="Stop",
         command=lambda: stop_reveal(label, text_widget, speed_var, speed_value_label)
     )
-    stop_button.pack(side="left", padx=10, ipadx=10, ipady=5)
+    stop_button.pack(side="left", padx=2, ipadx=2, ipady=2)
 
     # Create a Text widget to display clipboard content and highlight words
-    text_widget = tk.Text(root, wrap="word", height=10, width=70)
+    text_widget = tk.Text(root, wrap="word", height=10, width=70, font=("Helvetica", 12))  # Change font size as needed
     text_widget.pack(pady=20, fill="both", expand=True)
+
 
     # Add settings cogwheel icon to top right
     settings_button = ttk.Button(
@@ -190,7 +191,7 @@ def main():
         width=4
         
     )
-    settings_button.pack(side="right", padx=10, pady=10)
+    settings_button.pack(side="right", padx=10, pady=2)
 
     # Set up a global hotkey
     keyboard.add_hotkey(
@@ -208,7 +209,7 @@ def main():
         anchor="e",
         justify="right"
     )
-    instructions.pack(pady=10, fill="x", padx=10)
+    instructions.pack(pady=2, fill="x", padx=10)
 
     root.mainloop()
 
