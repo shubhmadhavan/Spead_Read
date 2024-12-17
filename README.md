@@ -7,8 +7,7 @@ An add-on to aid in spead-reading text from clipboard
 > pyinstaller --onefile --windowed --icon=icon.ico main.py
 
 ## Preview
-![image](https://github.com/user-attachments/assets/782a930c-be13-4936-abb0-4ba2c53616dc)
-
+![image](https://github.com/user-attachments/assets/5aa7d158-7388-4e1c-a3fb-6df0204453e5)
 
 ## Functionality
 - Pressing `Ctrl+Alt+Shift+Q` activates the Application
