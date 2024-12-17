@@ -7,9 +7,10 @@ An add-on to aid in spead-reading text from clipboard
 > pyinstaller --onefile --windowed --icon=icon.ico main.py
 
 ## Preview
-![image](https://github.com/user-attachments/assets/8d35ab99-e76d-4b4b-8893-fe9f9a37d6f5)
+![image](https://github.com/user-attachments/assets/782a930c-be13-4936-abb0-4ba2c53616dc)
+
 
 ## Functionality
 - Pressing `Ctrl+Alt+Shift+Q` activates the Application
 - Contents of User's Clipboard are presented one-word at a time, based on User's desired WPS rate.
-
+- Pressing the Bottom Right Button reveals a Color Picker and User may choose the color for highlighting the text
